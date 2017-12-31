@@ -1,0 +1,38 @@
+<resources>
+    <string name="operator_ana">全日空</string>
+    <string name="operator_jr_bus_kanto">JRバス関東</string>
+    <string name="operator_jr_east">JR東日本</string>
+    <string name="operator_kanto_bus">関東バス</string>
+    <string name="operator_keikyu">京急電鉄</string>
+    <string name="operator_keio">京王電鉄</string>
+    <string name="operator_keio_bus">京王バス</string>
+    <string name="operator_keisei">京成電鉄</string>
+    <string name="operator_kokusai_kogyo">国際興業</string>
+    <string name="operator_naa">成田国際空港</string>
+    <string name="operator_nishi_tokyo_bus">西東京バス</string>
+    <string name="operator_odakyu">小田急</string>
+    <string name="operator_odakyu_bus">小田急バス</string>
+    <string name="operator_seibu">西武</string>
+    <string name="operator_seibu_bus">西武バス</string>
+    <string name="operator_hnd_tiat">東京国際空港ターミナル</string>
+    <string name="operator_tobu">東武鉄道</string>
+    <string name="operator_tobu_bus">東武バス</string>
+    <string name="operator_toei">東京都交通局</string>
+    <string name="operator_tokyo_metro">東京メトロ</string>
+    <string name="operator_tokyu">東急電鉄</string>
+    <string name="operator_tokyu_bus">東急バス</string>
+    <string name="operator_twr">東京臨海高速鉄道</string>
+    <string name="operator_yurikamoke">ゆりかもめ</string>
+    <string name="operator_other">その他事業者</string>
+
+    <string name="calendar_monday">月曜日</string>
+    <string name="calendar_tuesday">火曜日</string>
+    <string name="calendar_wednesday">水曜日</string>
+    <string name="calendar_thursday">木曜日</string>
+    <string name="calendar_friday">金曜日</string>
+    <string name="calendar_saturday">土曜日</string>
+    <string name="calendar_sunday">日曜日</string>
+    <string name="calendar_weekday">平日</string>
+    <string name="calendar_holiday">休日</string>
+    <string name="calendar_saturday_holiday">土休日</string>
+</resources>

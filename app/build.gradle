@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+kapt {
+    generateStubs = true
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "me.kwsk.odptlibrary"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "0.9.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // 東京公共交通オープンデータチャレンジに関わる設定
+        if (file('consumer-key.gradle').exists()) {
+            apply from: 'consumer-key.gradle', to: android.defaultConfig
+        } else {
+            buildConfigField "String", "API_KEY", "\"ACL_CONSUMERKEY\""
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':core')
+    implementation project(path: ':repository')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    // AAC
+    implementation "android.arch.lifecycle:extensions:$arch_lifecycle_extensions_version"
+    // Data Binding
+    kapt "com.android.databinding:compiler:$databinding_version"
+    // Dagger2
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation("com.squareup.retrofit2:converter-simplexml:$retrofit_version") {
+        exclude group: 'xpp3', module: 'xpp3'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+    }
+    // OkHttp
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+    // Rx
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    // ThreeTenABP
+    implementation "com.jakewharton.threetenabp:threetenabp:$threetenabp_version"
+}

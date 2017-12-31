@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Core</string>
+
+    <string name="operator_ana">All Nippon Airways</string>
+    <string name="operator_jr_bus_kanto">JR Bus Kanto</string>
+    <string name="operator_jr_east">JR East</string>
+    <string name="operator_kanto_bus">Kanto Bus</string>
+    <string name="operator_keikyu">Keikyu</string>
+    <string name="operator_keio">Keio</string>
+    <string name="operator_keio_bus">Keio Bus</string>
+    <string name="operator_keisei">Keisei</string>
+    <string name="operator_kokusai_kogyo">Kokusai Kogyo</string>
+    <string name="operator_naa">Narita International Airport</string>
+    <string name="operator_nishi_tokyo_bus">Nishi Tokyo Bus</string>
+    <string name="operator_odakyu">Odakyu</string>
+    <string name="operator_odakyu_bus">Odakyu Bus</string>
+    <string name="operator_seibu">Seibu</string>
+    <string name="operator_seibu_bus">Seibu Bus</string>
+    <string name="operator_hnd_tiat">Tokyo International Air Terminal</string>
+    <string name="operator_tobu">Tobu</string>
+    <string name="operator_tobu_bus">Tobu Bus</string>
+    <string name="operator_toei">Toei:Bureau of Transportation Tokyo Metropolitan Government</string>
+    <string name="operator_tokyo_metro">Tokyo Metro</string>
+    <string name="operator_tokyu">Tokyu</string>
+    <string name="operator_tokyu_bus">Tokyu Bus</string>
+    <string name="operator_twr">TWR Rinkai Line</string>
+    <string name="operator_yurikamoke">Yurikamome</string>
+    <string name="operator_other">Other Operator</string>
+
+    <string name="calendar_monday">Monday</string>
+    <string name="calendar_tuesday">Tuesday</string>
+    <string name="calendar_wednesday">Wednesday</string>
+    <string name="calendar_thursday">Thursday</string>
+    <string name="calendar_friday">Friday</string>
+    <string name="calendar_saturday">Saturday</string>
+    <string name="calendar_sunday">Sunday</string>
+    <string name="calendar_weekday">Weekday</string>
+    <string name="calendar_holiday">Holiday</string>
+    <string name="calendar_saturday_holiday">Saturday and holiday</string>
+</resources>
